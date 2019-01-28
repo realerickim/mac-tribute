@@ -67,33 +67,31 @@ span {
     font-size: 6vmax;
     margin-top: 0;
 }
-.play-button {
-	box-sizing: border-box;
-	display: block;
-	width: 80px;
-	height: 80px;
-	padding-top: 14px;
-	padding-left: 8px;
-	line-height: 20px;
-	border: 6px solid #fff;
-	border-radius: 50%;
-	color:#f5f5f5;
-	text-align: center;
-	text-decoration: none;
-	background-color: rgba(0,0,0,0.5);
-	font-size: 20px;
-	font-weight: bold;
-	transition: all 0.3s ease;
+.play-button-outer {
+    margin: 25% auto;
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+  }
+  .play-button {
     margin: 0 auto;
-    margin-top: 20vh;
-    margin-bottom: 20vh;
-}
-.play-button:hover {
-    background-color: rgba(0,0,0,0.8);
-	box-shadow: 0px 0px 10px rgba(255,255,100,1);
-	text-shadow: 0px 0px 10px rgba(255,255,100,1);
-}
-
+    top: 25%;
+    position: relative;  
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 2.5em 0 2.5em 5em;
+    border-color: transparent transparent transparent rgb(0, 0, 0);
+    opacity: 1; 
+  }
+  .play-button-outer:hover {
+    background-color: rgb(255, 251, 0);
+  }
+  .play-button-outer:hover .play-button {
+    opacity: 1;
+  }
 @media only screen and (min-width: 900px) {
     #title {
         font-size: 8vmax;
