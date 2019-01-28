@@ -1,0 +1,113 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+}
+
+#intro-div {
+    min-height: 100vh;
+    background-color: black;
+    text-align: center;
+}
+
+#image-div {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#image {
+    height: auto;
+    width: auto;
+    max-height: 100%;
+    max-width: 100%;
+}
+#img-caption {
+    height: 100vh;
+    font-family: "helvetica";
+    font-size: 6vmax;
+    line-height: 100vh;
+    text-align: center;
+}
+span {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+
+#tribute-div {
+    min-height: 100vh;
+    background-color: black;
+    text-align: center;
+}
+.tribute-text {
+    color: white;
+    font-size: 5vmax;
+    font-family: 'Palatino';
+}
+
+
+#title {
+    color: white;
+    font-family: "Palatino";
+    font-size: 10vmax;
+    margin-bottom: 0;
+}
+.section-title {
+    color: white;
+    font-family: "Palatino";
+    font-size: 8vmax;
+    margin-bottom: 0;
+}
+#subtitle {
+    color: white;
+    font-family: "Palatino";
+    font-size: 6vmax;
+    margin-top: 0;
+}
+.play-button {
+	box-sizing: border-box;
+	display: block;
+	width: 80px;
+	height: 80px;
+	padding-top: 14px;
+	padding-left: 8px;
+	line-height: 20px;
+	border: 6px solid #fff;
+	border-radius: 50%;
+	color:#f5f5f5;
+	text-align: center;
+	text-decoration: none;
+	background-color: rgba(0,0,0,0.5);
+	font-size: 20px;
+	font-weight: bold;
+	transition: all 0.3s ease;
+    margin: 0 auto;
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+}
+.play-button:hover {
+    background-color: rgba(0,0,0,0.8);
+	box-shadow: 0px 0px 10px rgba(255,255,100,1);
+	text-shadow: 0px 0px 10px rgba(255,255,100,1);
+}
+
+@media only screen and (min-width: 900px) {
+    #title {
+        font-size: 8vmax;
+    }
+    #subtitle {
+        font-size: 4vmax;
+    }
+    #img-caption {
+        font-size: 5vmax;
+    }
+    .section-title {
+        font-size: 6vmax;
+    }
+    .tribute-text {
+        font-size: 3vmax;
+    }
+}
